@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sear - 海权 | MainPage </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 新增顶栏样式 */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #4a90e2;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #357abd;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            flex-direction: column;
+            padding-top: 70px; /* 为顶栏留出空间 */
+        }
+
+        .content-wrapper {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            margin-top: 50px; /* 调整内容间距- */
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            color: #212529;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .sub-title {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            /* max-width: 80%; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #357abd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .sub-title {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-bar">
+        <a href="#" class="brand">Sear·海权 | 关于</a>
+        <div class="nav-links">
+            <a href="./" class="nav-link">首页</a>
+            <a href="historyver/" class="nav-link">历史版本</a>
+            <a href="#" class="nav-link">关于</a>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <h1 class="main-title">开发团队</h1>
+        <p class="sub-title">UI、插画设计：云川  编写：NetherStar_o</p>
+        <p class="sub-title"># 使用Unity编写，灵感来源于KARDS #</p>
+    </div>
+</body>
+</html>
